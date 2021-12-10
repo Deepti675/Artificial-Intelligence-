@@ -6,6 +6,8 @@ For this project we have used genetic algorithm. A general flow of genetic algor
 3.	The Roulette fitness function is written by taking the weight(importance) of each species and selecting two parents with max fitness value.
 4.	Crossover has been done in different way. Instead of flipping parameter value one child with one parent, we are randomly deciding which the parent to be flipped.
 5.	Mutation/flipping has been achieved by changing  the  gene of children by changing the epoch(adding some integer to existing epoch number). This differentiates the two consecutive children.
+
+
 Process--->
 
 1.	Instead of using the code snippet for downloading dataset, we have downloaded from keras and did standard train(60000) and test(10000) split.
@@ -15,6 +17,8 @@ Process--->
 in each generation, we have removed 2 species having lowest fitness value. This is dome to ensure only fittest species is selected as parents.
 
 The convergence criteria is selected when the accuracy is greater than 95% or when 3 generations are done. While running the code we found that 3 generations are sufficient   for getting 75-85%.
+
+
 
 Accuracy and Parameters trade off--->
 
